@@ -6,6 +6,8 @@
 body {
     background-color: #f1f1f1;
     font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-size: 15px;
 }
 
 main {
@@ -24,12 +26,121 @@ main {
         grid-area: div1;
         background-color: white;
         margin-left: 16px;
+        box-shadow: 4px 4px 4px 0 #aab2b8;
+        color: #757575;
 
         .cv_img {
             width: 100%;
+            position: relative;
             img {
                 width: 100%;
             }
+            .cv_name {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                padding: 16px;
+                h2 {
+                    font-weight: 400;
+                    font-size: 30px;
+                    color: black;
+                }
+            }
+        }
+
+        .info {
+            padding: 16px;
+            >p {
+                margin: 15px 0;
+            }
+
+            i {
+                color: #009678;
+                margin-right: 16px;
+                font-size: 18px;
+            }
+
+            .skills {
+                margin: 18px 0;
+                font-size: 18px;
+                font-weight: 900;
+            }
+
+            .percent_bar {
+                color: black;
+                background-color: #f1f1f1;
+                font-size: 12px;
+                border-radius: 16px;
+
+                .percentage_1 {
+                    width: 90%;
+                    color: white;
+                    background-color: #009678;
+                    text-align: center;
+                    border-radius: 16px;
+                }
+
+                .percentage_2 {
+                    width: 80%;
+                    color: white;
+                    background-color: #009678;
+                    text-align: center;
+                    border-radius: 16px;
+                }
+
+                .percentage_3 {
+                    width: 75%;
+                    color: white;
+                    background-color: #009678;
+                    text-align: center;
+                    border-radius: 16px;
+                }
+
+                .percentage_4 {
+                    width: 50%;
+                    color: white;
+                    background-color: #009678;
+                    text-align: center;
+                    border-radius: 16px;
+                }
+            }
+
+            .languages {
+                margin-top: 48px;
+                margin-bottom: 18px;
+                font-size: 18px;
+                font-weight: 900;
+            }
+
+            .languages_bar {
+                color: black;
+                background-color: #f1f1f1;
+                border-radius: 16px;
+
+                .level_bar_1 {
+                    height: 24px;
+                    width: 100%;
+                    color: white;
+                    background-color: #009678;
+                    border-radius: 16px;
+                }
+
+                .level_bar_2 {
+                    height: 24px;
+                    width: 55%;
+                    color: white;
+                    background-color: #009678;
+                    border-radius: 16px;
+                }
+
+                .level_bar_3 {
+                    height: 24px;
+                    width: 25%;
+                    color: white;
+                    background-color: #009678;
+                    border-radius: 16px;
+                }
+            } 
         }
     }
     
@@ -40,13 +151,16 @@ main {
         display: inherit;
         grid-template-rows: 1fr 1fr;
         gap: 16px;
+        
 
         .top_part {
             background-color: white;
+            box-shadow: 4px 4px 4px 0 #aab2b8;
         }
 
         .bottom_part {
             background-color: white;
+            box-shadow: 4px 4px 4px 0 #aab2b8;
         }
     }
 

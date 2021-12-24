@@ -5,6 +5,8 @@
 body {
   background-color: #f1f1f1;
   font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  font-size: 15px;
 }
 main {
   height: 100vh;
@@ -19,12 +21,108 @@ main .left_section {
   grid-area: div1;
   background-color: white;
   margin-left: 16px;
+  box-shadow: 4px 4px 4px 0 #aab2b8;
+  color: #757575;
 }
 main .left_section .cv_img {
   width: 100%;
+  position: relative;
 }
 main .left_section .cv_img img {
   width: 100%;
+}
+main .left_section .cv_img .cv_name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 16px;
+}
+main .left_section .cv_img .cv_name h2 {
+  font-weight: 400;
+  font-size: 30px;
+  color: black;
+}
+main .left_section .info {
+  padding: 16px;
+}
+main .left_section .info > p {
+  margin: 15px 0;
+}
+main .left_section .info i {
+  color: #009678;
+  margin-right: 16px;
+  font-size: 18px;
+}
+main .left_section .info .skills {
+  margin: 18px 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+main .left_section .info .percent_bar {
+  color: black;
+  background-color: #f1f1f1;
+  font-size: 12px;
+  border-radius: 16px;
+}
+main .left_section .info .percent_bar .percentage_1 {
+  width: 90%;
+  color: white;
+  background-color: #009678;
+  text-align: center;
+  border-radius: 16px;
+}
+main .left_section .info .percent_bar .percentage_2 {
+  width: 80%;
+  color: white;
+  background-color: #009678;
+  text-align: center;
+  border-radius: 16px;
+}
+main .left_section .info .percent_bar .percentage_3 {
+  width: 75%;
+  color: white;
+  background-color: #009678;
+  text-align: center;
+  border-radius: 16px;
+}
+main .left_section .info .percent_bar .percentage_4 {
+  width: 50%;
+  color: white;
+  background-color: #009678;
+  text-align: center;
+  border-radius: 16px;
+}
+main .left_section .info .languages {
+  margin-top: 48px;
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 900;
+}
+main .left_section .info .languages_bar {
+  color: black;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+}
+main .left_section .info .languages_bar .level_bar_1 {
+  height: 24px;
+  width: 100%;
+  color: white;
+  background-color: #009678;
+  border-radius: 16px;
+}
+main .left_section .info .languages_bar .level_bar_2 {
+  height: 24px;
+  width: 55%;
+  color: white;
+  background-color: #009678;
+  border-radius: 16px;
+}
+main .left_section .info .languages_bar .level_bar_3 {
+  height: 24px;
+  width: 25%;
+  color: white;
+  background-color: #009678;
+  border-radius: 16px;
 }
 main .right_section {
   grid-area: div2;
@@ -36,9 +134,11 @@ main .right_section {
 }
 main .right_section .top_part {
   background-color: white;
+  box-shadow: 4px 4px 4px 0 #aab2b8;
 }
 main .right_section .bottom_part {
   background-color: white;
+  box-shadow: 4px 4px 4px 0 #aab2b8;
 }
 main .footer {
   grid-area: footer;
